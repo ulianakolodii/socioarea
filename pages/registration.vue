@@ -40,7 +40,13 @@ const disabled = computed(
 	<NuxtLayout name="form">
 		<template #default>
 			<form @submit.prevent="handleSubmit">
-				<MInput v-model="login" placeholder="Login" :invalid="login === '' ? undefined : !isLoginValid" clear />
+				<MInput
+					v-model="login"
+					placeholder="Login"
+					:invalid="login === '' ? undefined : !isLoginValid"
+					clear
+					autofocus
+				/>
 				<MEmailInput v-model="email" placeholder="Email" :invalid="email === '' ? undefined : !isEmailValid" clear />
 				<MPasswordInput v-model="password" placeholder="Password" />
 				<MInput

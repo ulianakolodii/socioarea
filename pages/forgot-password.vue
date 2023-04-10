@@ -13,7 +13,7 @@ const handleSubmit = (event: Event) => {
 	<NuxtLayout name="form" @submit="handleSubmit">
 		<template #default>
 			<form @submit.prevent="handleSubmit">
-				<MEmailInput v-model="email" placeholder="Email" clear />
+				<MEmailInput v-model="email" placeholder="Email" clear autofocus />
 				<AButton variant="primary">Remind me</AButton>
 			</form>
 		</template>

@@ -3,27 +3,31 @@
 	"private": true,
 	"scripts": {
 		"build": "nuxt build",
-		"dev": "nuxt dev",
+		"dev": "nuxt dev --dotenv .env",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
+		"prepare": "husky install",
 		"postinstall": "nuxt prepare",
 		"lint": "eslint  --ext .vue,.ts,.js,.mjs .",
 		"prettier": "prettier --write --ignore-path .gitignore ."
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.5.1",
+		"@commitlint/config-conventional": "^17.4.4",
 		"@nuxtjs/eslint-config-typescript": "12.0.0",
 		"eslint": "8.38.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-config-prettier": "8.8.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"husky": "^8.0.3",
 		"nuxt": "3.3.3",
-		"prettier": "^2.8.7",
-		"sass": "^1.61.0",
-		"sass-loader": "^13.2.2",
+		"prettier": "2.8.7",
+		"sass": "1.61.0",
+		"sass-loader": "13.2.2",
 		"typescript": "5.0.4"
 	},
 	"prettier": "./.prettierrc.js",
 	"dependencies": {
-		"@vueuse/nuxt": "^9.13.0",
-		"gsap": "^3.11.5"
+		"@vueuse/nuxt": "9.13.0",
+		"gsap": "3.11.5"
 	}
 }

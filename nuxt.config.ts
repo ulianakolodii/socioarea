@@ -2,4 +2,9 @@
 export default defineNuxtConfig({
 	modules: ["@vueuse/nuxt"],
 	css: ["assets/css/normalize.css", "assets/css/theme-base.css"],
+	runtimeConfig: {
+		mongodbUri: "",
+		secret: "",
+		expiresIn: "15m",
+	},
 });

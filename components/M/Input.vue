@@ -51,7 +51,7 @@ const handleStartClearing = () => {
 	}
 	isClearing.value = true;
 	set(inputGroupRef.value.$el, {
-		"--clear-swipe-left": (inputRef.value.$el.offsetWidth - 16) * -1 + "px",
+		"--clear-swipe-left": `${(inputRef.value.$el.offsetWidth - 16) * -1}px`,
 	});
 	to(inputGroupRef.value.$el, {
 		keyframes: [
@@ -79,7 +79,7 @@ const handleStartClearing = () => {
 			},
 			{
 				"--clear-swipe-x": 1,
-				"--clear-x": inputRef.value.$el.offsetWidth * -1 + "px",
+				"--clear-x": `${inputRef.value.$el.offsetWidth * -1}px`,
 				duration: 0.45,
 				onComplete() {
 					if (!inputRef.value || !inputGroupRef.value) {

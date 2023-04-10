@@ -1,13 +1,13 @@
 <script setup lang="ts">
+definePageMeta({
+	middleware: ["guest"],
+});
+
 const email = ref("");
 
 const handleSubmit = (event: Event) => {
 	console.log(event);
 };
-
-// definePageMeta({
-// 	middleware: ["guest"],
-// });
 </script>
 <template>
 	<NuxtLayout name="form" @submit="handleSubmit">

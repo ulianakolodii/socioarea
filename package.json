@@ -27,7 +27,14 @@
 	},
 	"prettier": "./.prettierrc.js",
 	"dependencies": {
+		"@types/jsonwebtoken": "^9.0.1",
+		"@types/uuid": "^9.0.1",
 		"@vueuse/nuxt": "9.13.0",
-		"gsap": "3.11.5"
+		"gsap": "3.11.5",
+		"h3-zod": "^0.4.2",
+		"jsonwebtoken": "^9.0.0",
+		"mongoose": "^7.0.3",
+		"uuid": "^9.0.0",
+		"zod": "^3.21.4"
 	}
 }

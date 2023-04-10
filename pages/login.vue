@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+	middleware: ["guest"],
+});
+
 const login = ref("");
 const password = ref("");
 const loading = ref(false);
@@ -12,10 +16,6 @@ const handleSubmit = async () => {
 		navigateTo("/");
 	}
 };
-
-// definePageMeta({
-// 	middleware: ["guest"],
-// });
 </script>
 <template>
 	<NuxtLayout name="form" @submit="handleSubmit">

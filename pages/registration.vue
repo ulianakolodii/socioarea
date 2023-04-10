@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+	middleware: ["guest"],
+});
 const login = ref("");
 const email = ref("");
 const password = ref("");
@@ -30,10 +33,6 @@ const disabled = computed(
 		!isPasswordValid.value ||
 		!isLoginValid.value
 );
-
-// definePageMeta({
-// 	middleware: ["guest"],
-// });
 </script>
 
 <template>

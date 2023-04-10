@@ -31,7 +31,7 @@ watchDebounced(
 		if (valid) {
 			const oldImg = faviconRef.value.querySelector("img");
 			if (oldImg) {
-				oldImg.src = "https://f1.allesedv.com/64/" + inputValue.value;
+				oldImg.src = `https://f1.allesedv.com/64/${inputValue.value}`;
 				return;
 			}
 			const img = new Image();
@@ -47,7 +47,7 @@ watchDebounced(
 					ease: "elastic.out(1, .7)",
 				});
 			};
-			img.src = "https://f1.allesedv.com/64/" + inputValue.value;
+			img.src = `https://f1.allesedv.com/64/${inputValue.value}`;
 		} else if (faviconRef.value && faviconRef.value.querySelector("img")) {
 			to(iconRef.value, {
 				"--favicon-scale": 0,
@@ -80,7 +80,7 @@ watchDebounced(
 						d="M7.9502 10.05C6.4502 8.55 6.4502 6.225 7.9502 4.725L10.0502 2.625C11.5502 1.125 13.8752 1.125 15.3752 2.625C16.8752 4.125 16.8752 6.45 15.3752 7.95L13.5002 9.75"
 					/>
 				</svg>
-				<div ref="faviconRef" class="favicon"></div>
+				<div ref="faviconRef" class="favicon" />
 			</div>
 		</template>
 		<slot />

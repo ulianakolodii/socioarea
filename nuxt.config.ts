@@ -7,4 +7,10 @@ export default defineNuxtConfig({
 		secret: "",
 		expiresIn: "15m",
 	},
+	nitro: {
+		plugins: ["@/server/index.ts"],
+		compressPublicAssets: {
+			brotli: true,
+		},
+	},
 });

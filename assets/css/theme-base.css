@@ -1,0 +1,45 @@
+:root {
+	/* Colors */
+	--cairo: #fafafb;
+	--cannes: #333;
+	--cali: #818190;
+	--chennai: #babac9;
+	--changchun: #f1f1fa;
+	--chattogram: #646b8c;
+	--cape: #e1e6f9;
+	--changzhou: #fff;
+	--casablanca: hsl(213, 100%, 51%);
+	--casablanca-darker: hsl(213, 100%, 41%);
+	--casablanca-darkest: hsl(213, 100%, 31%);
+	--chaozhou: #005ac7;
+	--changsha: hsl(231, 39%, 81%);
+	--changsha-darker: hsl(231, 39%, 71%);
+	--changsha-darkest: hsl(231, 39%, 61%);
+	--caracas: #f04949;
+	--chicago: #16bf78;
+	--coimbatore: #2b3044;
+	--camayenne: #d1d6ee;
+	--conakry: hsl(230, 28%, 16%);
+	--conakry-darker: hsl(230, 28%, 11%);
+	--conakry-darkest: hsl(230, 28%, 6%);
+	--changshu: #555d66;
+
+	--curitiba: #080934;
+	--cixi: #46d37d;
+	--changde: rgba(255, 255, 255, 0.3);
+	--cordoba: rgba(255, 255, 255, 0.1);
+	--changzhi: rgba(203, 65, 163, 0.15);
+	--copenhagen: #07082b;
+
+	/* Gradients */
+	--ganduras: linear-gradient(270deg, var(--cairo) 0%, var(--chennai) 100%);
+	--gilbert: linear-gradient(180deg, var(--chaozhou), var(--curitiba));
+
+	--gap: 8px;
+}
+
+body {
+	background-color: var(--cairo);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji";
+}
